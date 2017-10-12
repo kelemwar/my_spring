@@ -43,11 +43,5 @@ public class DeviceDAOImpl implements DeviceDAO{
 
    }
 
-    @Override
-    public String toString() {
-        return "DeviceDAOImpl{" +
-                "dataSource=" + dataSource +
-                ", jdbcTemplate=" + jdbcTemplate +
-                '}';
-    }
+
 }

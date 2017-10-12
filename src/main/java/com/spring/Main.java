@@ -17,9 +17,10 @@ public class Main {
         ApplicationContext cntx = new ClassPathXmlApplicationContext("beans.xml");
         ApplicationContext dsCntx = new ClassPathXmlApplicationContext("ds.xml");
         DeviceDAO deviceDAO = (DeviceDAO) dsCntx.getBean("deviceDao") ;
-        System.out.println(deviceDAO);
 
-        List<Device> getAll
+
+        List<Device> deviceList = deviceDAO.getAll();
+        System.out.println(deviceList.toString());
 
     }
 

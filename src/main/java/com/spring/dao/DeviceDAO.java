@@ -9,7 +9,8 @@ import java.util.List;
  */
 public interface DeviceDAO {
     List<Device> getAll();
-    String GET_ALL = "SELECT * FROM DEVICES";
+    String GET_ALL = "SELECT * FROM DEVICE";
+
 
 
 }
