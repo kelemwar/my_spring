@@ -8,7 +8,7 @@ import java.util.List;
  * Created by Pavl_io54 on 12.10.2017.
  */
 public interface DeviceDAO {
-    List<Device> getAll;
+    List<Device> getAll();
     String GET_ALL = "SELECT * FROM DEVICES";
 
 
