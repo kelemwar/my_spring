@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class SpringIntroController {
 
-    @RequestMapping(value = "/start", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index () {return "index";}
 
-    @RequestMapping(value = "start", method = RequestMethod.POST)
+    @RequestMapping(value = "/", method = RequestMethod.POST)
     public String indexP () {return "index";}
 }
