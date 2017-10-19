@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.2">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>12401</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-10-19.13:09:11.419</IntrospectionTimestamp>
+      <IntrospectionStateNumber>549</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>12113</ObjectId>
+    </schema>
+    <sequence id="9" parent="3" name="device_id_seq">
+      <ObjectId>16443</ObjectId>
+      <StateNumber>549</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="10" parent="3" name="seq_user">
+      <ObjectId>16432</ObjectId>
+      <StateNumber>548</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="11" parent="3" name="device">
+      <ObjectId>16445</ObjectId>
+      <StateNumber>549</StateNumber>
+    </table>
+    <table id="12" parent="3" name="qry_queue">
+      <ObjectId>16434</ObjectId>
+      <StateNumber>548</StateNumber>
+    </table>
+    <table id="13" parent="3" name="qry_type">
+      <ObjectId>16440</ObjectId>
+      <StateNumber>548</StateNumber>
+    </table>
+    <table id="14" parent="3" name="st_abonents">
+      <ObjectId>16437</ObjectId>
+      <StateNumber>548</StateNumber>
+    </table>
+    <column id="15" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>549</StateNumber>
+      <SequenceName>device_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;device_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="16" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>549</StateNumber>
+    </column>
+    <column id="17" parent="11" name="location">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>549</StateNumber>
+    </column>
+    <index id="18" parent="11" name="device_pkey">
+      <ObjectId>16449</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="19" parent="11" name="device_pkey">
+      <ObjectId>16450</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>device_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="20" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+    <column id="21" parent="12" name="c_in_time">
+      <Position>2</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+    <column id="22" parent="12" name="c_exec_time">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+    <column id="23" parent="12" name="c_st">
+      <Position>4</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+    <column id="24" parent="12" name="c_qry_type">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+    <column id="25" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+    <column id="26" parent="13" name="c_ab_ref">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+    <column id="27" parent="13" name="c_name">
+      <Position>3</Position>
+      <DataType>varchar(210)|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+    <column id="28" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+    <column id="29" parent="14" name="c_name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <StateNumber>548</StateNumber>
+    </column>
+  </database-model>
+</dataSource>
