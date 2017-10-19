@@ -9,9 +9,10 @@
 
 
     <context:annotation-config/>
-    <bean id="network" class="com.spring.model.Network" > </bean>
 
-    <bean id="Device"  class="com.spring.model.Device"></bean>
+    <bean id="network" class="com.spring.model.Network" />
+    <bean id="device"  class="com.spring.model.Device"/>
+
 
 
 

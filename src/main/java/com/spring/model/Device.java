@@ -1,8 +1,11 @@
 package com.spring.model;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Created by Pavl_io54 on 09.10.2017.
  */
+@Component
 public class Device {
     private int id;
     private String name;

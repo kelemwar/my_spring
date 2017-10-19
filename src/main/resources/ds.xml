@@ -5,17 +5,17 @@
 
 
 
-   <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-      <property name="driverClassName" value="org.postgresql.Driver"/>
-      <property name="url" value="jdbc:postgresql://localhost:5439/postgres"/>
-      <property name="username" value="postgres" />
-      <property name="password" value="" />
+   <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+      <!--<property name="driverClassName" value="org.postgresql.Driver"/>-->
+      <!--<property name="url" value="jdbc:postgresql://localhost:5439/postgres"/>-->
+      <!--<property name="username" value="postgres" />-->
+      <!--<property name="password" value="" />-->
 
 
-   </bean>
+   <!--</bean>-->
 
-   <bean id="deviceDao" class="com.spring.dao.impl.DeviceDAOImpl" autowire="constructor">
-      <property name="dataSource" ref="dataSource"/>
-   </bean>
+   <bean id="deviceDao" class="com.spring.dao.impl.DeviceDAOImpl"/>
+
+
 
 </beans>

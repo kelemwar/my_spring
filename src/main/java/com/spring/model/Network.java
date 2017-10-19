@@ -1,10 +1,12 @@
 package com.spring.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by Pavl_io54 on 09.10.2017.
  */
+@Component
 public class Network {
     private String name;
     private Device locationA;

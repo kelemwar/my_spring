@@ -2,9 +2,10 @@ package com.spring.dao.impl;
 
 import com.spring.dao.DeviceDAO;
 import com.spring.model.Device;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
@@ -14,11 +15,13 @@ import java.util.List;
 /**
  * Created by Pavl_io54 on 12.10.2017.
  */
+@Component
 public class DeviceDAOImpl implements DeviceDAO{
     private DataSource dataSource;
     private JdbcTemplate jdbcTemplate;
 
 
+    @Autowired
 
     public void setDataSource(DataSource dataSource){
 
